@@ -11,6 +11,6 @@ public class HUD : MonoBehaviour
         if (GameManager.Instance == null) return;
 
         scoreText.text = "Score: " + GameManager.Instance.score;
-        livesText.text = "Vidas: " + GameManager.Instance.lives;
+        livesText.text = "Lives: " + GameManager.Instance.lives;
     }
 }
