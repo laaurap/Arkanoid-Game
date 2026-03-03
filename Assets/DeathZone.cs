@@ -6,8 +6,10 @@ public class DeathZone : MonoBehaviour
     {
         if (!other.CompareTag("Ball")) return;
 
+        // perde vida
         GameManager.Instance.LoseLife();
 
+        // reseta a bola em cima do paddle
         BallControl ball = other.GetComponent<BallControl>();
         if (ball != null)
             ball.ResetToPaddle();
