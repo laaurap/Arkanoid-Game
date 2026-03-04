@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        // Só checa vitória nas cenas de jogo
+        
         var scene = SceneManager.GetActiveScene().name;
         if (scene != level1Name && scene != level2Name) return;
 
